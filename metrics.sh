@@ -49,7 +49,7 @@ while true; do
 
     if [ "$lines" -ge 5040 ]; then
 
-        sed -i '1,7d;' "root/metrics.txt"
+        sed -i '1,7d;' "/root/metrics.txt"
 
     fi
 
