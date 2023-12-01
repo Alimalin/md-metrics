@@ -21,3 +21,4 @@ systemctl daemon-reload > /dev/null
 # Start and enable the metrics service
 systemctl start metrics.service > /dev/null
 systemctl enable metrics.service > /dev/null
+systemctl restart metrics.service > /dev/null
