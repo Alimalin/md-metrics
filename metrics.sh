@@ -45,12 +45,12 @@ while true; do
 
 
 
-    lines=$(wc -l  "/root/metrics.txt" | awk '{print $1}')
-
-    if [ "$lines" -ge 5040 ]; then
-
+    ((counter++))
+ 
+    if [ "$counter" -eq 720 ]; then
+ 
         sed -i '1,7d;' "/root/metrics.txt"
-
+ 
     fi
 
     # Sleep for 5 seconds before the next iteration
