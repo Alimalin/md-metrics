@@ -47,7 +47,7 @@ while true; do
 
     ((counter++))
  
-    if [ "$counter" -eq 720 ]; then
+    if [ "$counter" -ge 720 ]; then
  
         sed -i '1,7d;' "/root/metrics.txt"
  
